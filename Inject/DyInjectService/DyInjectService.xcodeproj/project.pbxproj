@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2928CB3B1DCF79BA004184F6 /* __DyViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2928CB391DCF79BA004184F6 /* __DyViewManager.h */; };
+		2928CB3C1DCF79BA004184F6 /* __DyViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB3A1DCF79BA004184F6 /* __DyViewManager.m */; };
+		2928CB4B1DD0AD8A004184F6 /* __XXDyInjectRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2928CB471DD0AD8A004184F6 /* __XXDyInjectRouter.h */; };
+		2928CB4C1DD0AD8A004184F6 /* __XXDyInjectRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB481DD0AD8A004184F6 /* __XXDyInjectRouter.m */; };
+		2928CB581DD0ADEA004184F6 /* NSObject+DyInjectRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2928CB561DD0ADEA004184F6 /* NSObject+DyInjectRouter.h */; };
+		2928CB591DD0ADEA004184F6 /* NSObject+DyInjectRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB571DD0ADEA004184F6 /* NSObject+DyInjectRouter.m */; };
+		294E87081DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 294E87061DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h */; };
+		294E87091DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E87071DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m */; };
+		296140B41DCDD41C00901D1A /* __DyTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140B21DCDD41C00901D1A /* __DyTest.h */; };
+		296140B51DCDD41C00901D1A /* __DyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140B31DCDD41C00901D1A /* __DyTest.m */; };
+		296140EB1DCDD62400901D1A /* XXFilePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140D71DCDD62400901D1A /* XXFilePacket.h */; };
+		296140EC1DCDD62400901D1A /* XXFilePacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140D81DCDD62400901D1A /* XXFilePacket.m */; };
+		296140EF1DCDD62400901D1A /* XXInfoPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140DB1DCDD62400901D1A /* XXInfoPacket.h */; };
+		296140F01DCDD62400901D1A /* XXInfoPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140DC1DCDD62400901D1A /* XXInfoPacket.m */; };
+		296140F11DCDD62400901D1A /* XXPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140DD1DCDD62400901D1A /* XXPacket.h */; };
+		296140F21DCDD62400901D1A /* XXPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140DE1DCDD62400901D1A /* XXPacket.m */; };
+		296140F31DCDD62400901D1A /* XXPacketProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140DF1DCDD62400901D1A /* XXPacketProtocol.h */; };
+		296140F41DCDD62400901D1A /* XXAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140E11DCDD62400901D1A /* XXAsyncSocket.h */; };
+		296140F51DCDD62400901D1A /* XXAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140E21DCDD62400901D1A /* XXAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		296140F61DCDD62400901D1A /* XXAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140E31DCDD62400901D1A /* XXAsyncUdpSocket.h */; };
+		296140F71DCDD62400901D1A /* XXAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140E41DCDD62400901D1A /* XXAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		296140F81DCDD62400901D1A /* XXDeviceConnectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140E51DCDD62400901D1A /* XXDeviceConnectManager.h */; };
+		296140F91DCDD62400901D1A /* XXDeviceConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140E61DCDD62400901D1A /* XXDeviceConnectManager.m */; };
+		296140FA1DCDD62400901D1A /* XXListenerConnectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140E71DCDD62400901D1A /* XXListenerConnectManager.h */; };
+		296140FB1DCDD62400901D1A /* XXListenerConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140E81DCDD62400901D1A /* XXListenerConnectManager.m */; };
+		296141041DCDE03400901D1A /* __DyJPEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140FF1DCDE03400901D1A /* __DyJPEngine.h */; };
+		296141051DCDE03400901D1A /* __DyJPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 296141001DCDE03400901D1A /* __DyJPEngine.m */; };
+		296141061DCDE03400901D1A /* __DyJsBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 296141011DCDE03400901D1A /* __DyJsBridge.h */; };
+		296141071DCDE03400901D1A /* __DyJsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 296141021DCDE03400901D1A /* __DyJsBridge.m */; };
+		296141081DCDE03400901D1A /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 296141031DCDE03400901D1A /* JSPatch.js */; };
+		2961410C1DCDE1E100901D1A /* __DyBundleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2961410A1DCDE1E100901D1A /* __DyBundleManager.h */; };
+		2961410D1DCDE1E100901D1A /* __DyBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961410B1DCDE1E100901D1A /* __DyBundleManager.m */; };
+		296141151DCE0E1300901D1A /* XXReceiveFileItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 296141131DCE0E1300901D1A /* XXReceiveFileItem.h */; };
+		296141161DCE0E1300901D1A /* XXReceiveFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 296141141DCE0E1300901D1A /* XXReceiveFileItem.m */; };
+		296141191DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.h in Headers */ = {isa = PBXBuildFile; fileRef = 296141171DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.h */; };
+		2961411A1DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 296141181DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.m */; };
+		2961411F1DCE1E8300901D1A /* XXReceiveFileService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2961411B1DCE1E8300901D1A /* XXReceiveFileService.h */; };
+		296141201DCE1E8300901D1A /* XXReceiveFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961411C1DCE1E8300901D1A /* XXReceiveFileService.m */; };
+		296141211DCE1E8300901D1A /* XXFindDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 2961411D1DCE1E8300901D1A /* XXFindDevice.h */; };
+		296141221DCE1E8300901D1A /* XXFindDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961411E1DCE1E8300901D1A /* XXFindDevice.m */; };
+		29CB983B1DCF341B00839A53 /* __DyDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 29CB98391DCF341B00839A53 /* __DyDatabaseManager.h */; };
+		29CB983C1DCF341B00839A53 /* __DyDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CB983A1DCF341B00839A53 /* __DyDatabaseManager.m */; };
+		29CB983F1DCF3A9600839A53 /* __DyDatabaseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 29CB983D1DCF3A9600839A53 /* __DyDatabaseItem.h */; };
+		29CB98401DCF3A9600839A53 /* __DyDatabaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CB983E1DCF3A9600839A53 /* __DyDatabaseItem.m */; };
+		29CB98431DCF3C9D00839A53 /* NSObject+__DyDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 29CB98411DCF3C9D00839A53 /* NSObject+__DyDatabase.h */; };
+		29CB98441DCF3C9D00839A53 /* NSObject+__DyDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CB98421DCF3C9D00839A53 /* NSObject+__DyDatabase.m */; };
+		29F588781DCD9439002A742F /* DyInjectService.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F588761DCD9439002A742F /* DyInjectService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29F589191DCD991B002A742F /* NSObject+__DyInjectSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F589171DCD991B002A742F /* NSObject+__DyInjectSwizzle.h */; };
+		29F5891A1DCD991B002A742F /* NSObject+__DyInjectSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F589181DCD991B002A742F /* NSObject+__DyInjectSwizzle.m */; };
+		29F5891D1DCD9929002A742F /* __DyInjectService.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F5891B1DCD9929002A742F /* __DyInjectService.h */; };
+		29F5891E1DCD9929002A742F /* __DyInjectService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F5891C1DCD9929002A742F /* __DyInjectService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2928CB391DCF79BA004184F6 /* __DyViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyViewManager.h; sourceTree = "<group>"; };
+		2928CB3A1DCF79BA004184F6 /* __DyViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyViewManager.m; sourceTree = "<group>"; };
+		2928CB471DD0AD8A004184F6 /* __XXDyInjectRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __XXDyInjectRouter.h; sourceTree = "<group>"; };
+		2928CB481DD0AD8A004184F6 /* __XXDyInjectRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __XXDyInjectRouter.m; sourceTree = "<group>"; };
+		2928CB561DD0ADEA004184F6 /* NSObject+DyInjectRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DyInjectRouter.h"; sourceTree = "<group>"; };
+		2928CB571DD0ADEA004184F6 /* NSObject+DyInjectRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DyInjectRouter.m"; sourceTree = "<group>"; };
+		294E87061DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WeChatRedEnvelopes.h"; sourceTree = "<group>"; };
+		294E87071DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WeChatRedEnvelopes.m"; sourceTree = "<group>"; };
+		296140B21DCDD41C00901D1A /* __DyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyTest.h; sourceTree = "<group>"; };
+		296140B31DCDD41C00901D1A /* __DyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyTest.m; sourceTree = "<group>"; };
+		296140D71DCDD62400901D1A /* XXFilePacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXFilePacket.h; sourceTree = "<group>"; };
+		296140D81DCDD62400901D1A /* XXFilePacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXFilePacket.m; sourceTree = "<group>"; };
+		296140DB1DCDD62400901D1A /* XXInfoPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXInfoPacket.h; sourceTree = "<group>"; };
+		296140DC1DCDD62400901D1A /* XXInfoPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXInfoPacket.m; sourceTree = "<group>"; };
+		296140DD1DCDD62400901D1A /* XXPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPacket.h; sourceTree = "<group>"; };
+		296140DE1DCDD62400901D1A /* XXPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPacket.m; sourceTree = "<group>"; };
+		296140DF1DCDD62400901D1A /* XXPacketProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPacketProtocol.h; sourceTree = "<group>"; };
+		296140E11DCDD62400901D1A /* XXAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXAsyncSocket.h; sourceTree = "<group>"; };
+		296140E21DCDD62400901D1A /* XXAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXAsyncSocket.m; sourceTree = "<group>"; };
+		296140E31DCDD62400901D1A /* XXAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXAsyncUdpSocket.h; sourceTree = "<group>"; };
+		296140E41DCDD62400901D1A /* XXAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXAsyncUdpSocket.m; sourceTree = "<group>"; };
+		296140E51DCDD62400901D1A /* XXDeviceConnectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDeviceConnectManager.h; sourceTree = "<group>"; };
+		296140E61DCDD62400901D1A /* XXDeviceConnectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDeviceConnectManager.m; sourceTree = "<group>"; };
+		296140E71DCDD62400901D1A /* XXListenerConnectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXListenerConnectManager.h; sourceTree = "<group>"; };
+		296140E81DCDD62400901D1A /* XXListenerConnectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXListenerConnectManager.m; sourceTree = "<group>"; };
+		296140FF1DCDE03400901D1A /* __DyJPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyJPEngine.h; sourceTree = "<group>"; };
+		296141001DCDE03400901D1A /* __DyJPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyJPEngine.m; sourceTree = "<group>"; };
+		296141011DCDE03400901D1A /* __DyJsBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyJsBridge.h; sourceTree = "<group>"; };
+		296141021DCDE03400901D1A /* __DyJsBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyJsBridge.m; sourceTree = "<group>"; };
+		296141031DCDE03400901D1A /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
+		2961410A1DCDE1E100901D1A /* __DyBundleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyBundleManager.h; sourceTree = "<group>"; };
+		2961410B1DCDE1E100901D1A /* __DyBundleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyBundleManager.m; sourceTree = "<group>"; };
+		296141131DCE0E1300901D1A /* XXReceiveFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXReceiveFileItem.h; sourceTree = "<group>"; };
+		296141141DCE0E1300901D1A /* XXReceiveFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXReceiveFileItem.m; sourceTree = "<group>"; };
+		296141171DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XXReceiveFileService+ListenerFileService.h"; sourceTree = "<group>"; };
+		296141181DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XXReceiveFileService+ListenerFileService.m"; sourceTree = "<group>"; };
+		2961411B1DCE1E8300901D1A /* XXReceiveFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXReceiveFileService.h; sourceTree = "<group>"; };
+		2961411C1DCE1E8300901D1A /* XXReceiveFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXReceiveFileService.m; sourceTree = "<group>"; };
+		2961411D1DCE1E8300901D1A /* XXFindDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXFindDevice.h; sourceTree = "<group>"; };
+		2961411E1DCE1E8300901D1A /* XXFindDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXFindDevice.m; sourceTree = "<group>"; };
+		29CB98391DCF341B00839A53 /* __DyDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyDatabaseManager.h; sourceTree = "<group>"; };
+		29CB983A1DCF341B00839A53 /* __DyDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyDatabaseManager.m; sourceTree = "<group>"; };
+		29CB983D1DCF3A9600839A53 /* __DyDatabaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyDatabaseItem.h; sourceTree = "<group>"; };
+		29CB983E1DCF3A9600839A53 /* __DyDatabaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyDatabaseItem.m; sourceTree = "<group>"; };
+		29CB98411DCF3C9D00839A53 /* NSObject+__DyDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+__DyDatabase.h"; sourceTree = "<group>"; };
+		29CB98421DCF3C9D00839A53 /* NSObject+__DyDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+__DyDatabase.m"; sourceTree = "<group>"; };
+		29F588731DCD9439002A742F /* DyInjectService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DyInjectService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F588761DCD9439002A742F /* DyInjectService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyInjectService.h; sourceTree = "<group>"; };
+		29F588771DCD9439002A742F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F589171DCD991B002A742F /* NSObject+__DyInjectSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+__DyInjectSwizzle.h"; sourceTree = "<group>"; };
+		29F589181DCD991B002A742F /* NSObject+__DyInjectSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+__DyInjectSwizzle.m"; sourceTree = "<group>"; };
+		29F5891B1DCD9929002A742F /* __DyInjectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyInjectService.h; sourceTree = "<group>"; };
+		29F5891C1DCD9929002A742F /* __DyInjectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyInjectService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29F5886F1DCD9439002A742F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2928CB381DCF79AB004184F6 /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				2928CB391DCF79BA004184F6 /* __DyViewManager.h */,
+				2928CB3A1DCF79BA004184F6 /* __DyViewManager.m */,
+			);
+			path = ViewManager;
+			sourceTree = "<group>";
+		};
+		2928CB461DD0AD8A004184F6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2928CB471DD0AD8A004184F6 /* __XXDyInjectRouter.h */,
+				2928CB481DD0AD8A004184F6 /* __XXDyInjectRouter.m */,
+			);
+			name = Router;
+			path = ../../Router;
+			sourceTree = "<group>";
+		};
+		294E87051DD4C07200537666 /* WeChatRedEnvelopes */ = {
+			isa = PBXGroup;
+			children = (
+				294E87061DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h */,
+				294E87071DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m */,
+			);
+			path = WeChatRedEnvelopes;
+			sourceTree = "<group>";
+		};
+		296140B01DCDD3C700901D1A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				294E87051DD4C07200537666 /* WeChatRedEnvelopes */,
+				2928CB381DCF79AB004184F6 /* ViewManager */,
+				29CB98381DCF33F000839A53 /* Database */,
+				2961410E1DCDE28800901D1A /* FileSystem */,
+				296141091DCDE1E100901D1A /* BundleManager */,
+				296140FE1DCDDFDC00901D1A /* JsBridge */,
+				296140B11DCDD3C700901D1A /* Test */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		296140B11DCDD3C700901D1A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				296140B21DCDD41C00901D1A /* __DyTest.h */,
+				296140B31DCDD41C00901D1A /* __DyTest.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		296140D51DCDD62400901D1A /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				296140D61DCDD62400901D1A /* Packet */,
+				296140E01DCDD62400901D1A /* Socket */,
+				296140E51DCDD62400901D1A /* XXDeviceConnectManager.h */,
+				296140E61DCDD62400901D1A /* XXDeviceConnectManager.m */,
+				296140E71DCDD62400901D1A /* XXListenerConnectManager.h */,
+				296140E81DCDD62400901D1A /* XXListenerConnectManager.m */,
+				2961411B1DCE1E8300901D1A /* XXReceiveFileService.h */,
+				2961411C1DCE1E8300901D1A /* XXReceiveFileService.m */,
+				2961411D1DCE1E8300901D1A /* XXFindDevice.h */,
+				2961411E1DCE1E8300901D1A /* XXFindDevice.m */,
+				296141131DCE0E1300901D1A /* XXReceiveFileItem.h */,
+				296141141DCE0E1300901D1A /* XXReceiveFileItem.m */,
+			);
+			name = Communication;
+			path = ../../Communication;
+			sourceTree = "<group>";
+		};
+		296140D61DCDD62400901D1A /* Packet */ = {
+			isa = PBXGroup;
+			children = (
+				296140D71DCDD62400901D1A /* XXFilePacket.h */,
+				296140D81DCDD62400901D1A /* XXFilePacket.m */,
+				296140DB1DCDD62400901D1A /* XXInfoPacket.h */,
+				296140DC1DCDD62400901D1A /* XXInfoPacket.m */,
+				296140DD1DCDD62400901D1A /* XXPacket.h */,
+				296140DE1DCDD62400901D1A /* XXPacket.m */,
+				296140DF1DCDD62400901D1A /* XXPacketProtocol.h */,
+			);
+			path = Packet;
+			sourceTree = "<group>";
+		};
+		296140E01DCDD62400901D1A /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				296140E11DCDD62400901D1A /* XXAsyncSocket.h */,
+				296140E21DCDD62400901D1A /* XXAsyncSocket.m */,
+				296140E31DCDD62400901D1A /* XXAsyncUdpSocket.h */,
+				296140E41DCDD62400901D1A /* XXAsyncUdpSocket.m */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		296140FE1DCDDFDC00901D1A /* JsBridge */ = {
+			isa = PBXGroup;
+			children = (
+				296140FF1DCDE03400901D1A /* __DyJPEngine.h */,
+				296141001DCDE03400901D1A /* __DyJPEngine.m */,
+				296141011DCDE03400901D1A /* __DyJsBridge.h */,
+				296141021DCDE03400901D1A /* __DyJsBridge.m */,
+				296141031DCDE03400901D1A /* JSPatch.js */,
+			);
+			path = JsBridge;
+			sourceTree = "<group>";
+		};
+		296141091DCDE1E100901D1A /* BundleManager */ = {
+			isa = PBXGroup;
+			children = (
+				2961410A1DCDE1E100901D1A /* __DyBundleManager.h */,
+				2961410B1DCDE1E100901D1A /* __DyBundleManager.m */,
+			);
+			path = BundleManager;
+			sourceTree = "<group>";
+		};
+		2961410E1DCDE28800901D1A /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				296141171DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.h */,
+				296141181DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.m */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		29CB98381DCF33F000839A53 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				29CB98391DCF341B00839A53 /* __DyDatabaseManager.h */,
+				29CB983A1DCF341B00839A53 /* __DyDatabaseManager.m */,
+				29CB983D1DCF3A9600839A53 /* __DyDatabaseItem.h */,
+				29CB983E1DCF3A9600839A53 /* __DyDatabaseItem.m */,
+				29CB98411DCF3C9D00839A53 /* NSObject+__DyDatabase.h */,
+				29CB98421DCF3C9D00839A53 /* NSObject+__DyDatabase.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		29F588691DCD9439002A742F = {
+			isa = PBXGroup;
+			children = (
+				29F588751DCD9439002A742F /* DyInjectService */,
+				29F588741DCD9439002A742F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29F588741DCD9439002A742F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29F588731DCD9439002A742F /* DyInjectService.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29F588751DCD9439002A742F /* DyInjectService */ = {
+			isa = PBXGroup;
+			children = (
+				296140D51DCDD62400901D1A /* Communication */,
+				2928CB461DD0AD8A004184F6 /* Router */,
+				29F589161DCD9814002A742F /* Utilities */,
+				296140B01DCDD3C700901D1A /* Module */,
+				29F588761DCD9439002A742F /* DyInjectService.h */,
+				2928CB561DD0ADEA004184F6 /* NSObject+DyInjectRouter.h */,
+				2928CB571DD0ADEA004184F6 /* NSObject+DyInjectRouter.m */,
+				29F5891B1DCD9929002A742F /* __DyInjectService.h */,
+				29F5891C1DCD9929002A742F /* __DyInjectService.m */,
+				29F588771DCD9439002A742F /* Info.plist */,
+			);
+			path = DyInjectService;
+			sourceTree = "<group>";
+		};
+		29F589161DCD9814002A742F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				29F589171DCD991B002A742F /* NSObject+__DyInjectSwizzle.h */,
+				29F589181DCD991B002A742F /* NSObject+__DyInjectSwizzle.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29F588701DCD9439002A742F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CB98431DCF3C9D00839A53 /* NSObject+__DyDatabase.h in Headers */,
+				2961411F1DCE1E8300901D1A /* XXReceiveFileService.h in Headers */,
+				29F5891D1DCD9929002A742F /* __DyInjectService.h in Headers */,
+				296140F61DCDD62400901D1A /* XXAsyncUdpSocket.h in Headers */,
+				2961410C1DCDE1E100901D1A /* __DyBundleManager.h in Headers */,
+				296140B41DCDD41C00901D1A /* __DyTest.h in Headers */,
+				296140FA1DCDD62400901D1A /* XXListenerConnectManager.h in Headers */,
+				29CB983F1DCF3A9600839A53 /* __DyDatabaseItem.h in Headers */,
+				296140F81DCDD62400901D1A /* XXDeviceConnectManager.h in Headers */,
+				296141061DCDE03400901D1A /* __DyJsBridge.h in Headers */,
+				294E87081DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h in Headers */,
+				296140F31DCDD62400901D1A /* XXPacketProtocol.h in Headers */,
+				2928CB581DD0ADEA004184F6 /* NSObject+DyInjectRouter.h in Headers */,
+				29F588781DCD9439002A742F /* DyInjectService.h in Headers */,
+				296140EF1DCDD62400901D1A /* XXInfoPacket.h in Headers */,
+				296140F11DCDD62400901D1A /* XXPacket.h in Headers */,
+				296140F41DCDD62400901D1A /* XXAsyncSocket.h in Headers */,
+				296140EB1DCDD62400901D1A /* XXFilePacket.h in Headers */,
+				29F589191DCD991B002A742F /* NSObject+__DyInjectSwizzle.h in Headers */,
+				296141191DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.h in Headers */,
+				29CB983B1DCF341B00839A53 /* __DyDatabaseManager.h in Headers */,
+				2928CB4B1DD0AD8A004184F6 /* __XXDyInjectRouter.h in Headers */,
+				296141041DCDE03400901D1A /* __DyJPEngine.h in Headers */,
+				296141151DCE0E1300901D1A /* XXReceiveFileItem.h in Headers */,
+				2928CB3B1DCF79BA004184F6 /* __DyViewManager.h in Headers */,
+				296141211DCE1E8300901D1A /* XXFindDevice.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29F588721DCD9439002A742F /* DyInjectService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29F5887B1DCD9439002A742F /* Build configuration list for PBXNativeTarget "DyInjectService" */;
+			buildPhases = (
+				29F5886E1DCD9439002A742F /* Sources */,
+				29F5886F1DCD9439002A742F /* Frameworks */,
+				29F588701DCD9439002A742F /* Headers */,
+				29F588711DCD9439002A742F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DyInjectService;
+			productName = DyInjectService;
+			productReference = 29F588731DCD9439002A742F /* DyInjectService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29F5886A1DCD9439002A742F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Shawn;
+				TargetAttributes = {
+					29F588721DCD9439002A742F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 29F5886D1DCD9439002A742F /* Build configuration list for PBXProject "DyInjectService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29F588691DCD9439002A742F;
+			productRefGroup = 29F588741DCD9439002A742F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29F588721DCD9439002A742F /* DyInjectService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29F588711DCD9439002A742F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296141081DCDE03400901D1A /* JSPatch.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29F5886E1DCD9439002A742F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2928CB591DD0ADEA004184F6 /* NSObject+DyInjectRouter.m in Sources */,
+				296140F91DCDD62400901D1A /* XXDeviceConnectManager.m in Sources */,
+				296140FB1DCDD62400901D1A /* XXListenerConnectManager.m in Sources */,
+				294E87091DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m in Sources */,
+				296140B51DCDD41C00901D1A /* __DyTest.m in Sources */,
+				296140EC1DCDD62400901D1A /* XXFilePacket.m in Sources */,
+				296141161DCE0E1300901D1A /* XXReceiveFileItem.m in Sources */,
+				2928CB3C1DCF79BA004184F6 /* __DyViewManager.m in Sources */,
+				296140F51DCDD62400901D1A /* XXAsyncSocket.m in Sources */,
+				296141051DCDE03400901D1A /* __DyJPEngine.m in Sources */,
+				2961411A1DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.m in Sources */,
+				29F5891A1DCD991B002A742F /* NSObject+__DyInjectSwizzle.m in Sources */,
+				2928CB4C1DD0AD8A004184F6 /* __XXDyInjectRouter.m in Sources */,
+				296141071DCDE03400901D1A /* __DyJsBridge.m in Sources */,
+				296141221DCE1E8300901D1A /* XXFindDevice.m in Sources */,
+				29CB98401DCF3A9600839A53 /* __DyDatabaseItem.m in Sources */,
+				296140F21DCDD62400901D1A /* XXPacket.m in Sources */,
+				296140F01DCDD62400901D1A /* XXInfoPacket.m in Sources */,
+				29CB98441DCF3C9D00839A53 /* NSObject+__DyDatabase.m in Sources */,
+				29F5891E1DCD9929002A742F /* __DyInjectService.m in Sources */,
+				296140F71DCDD62400901D1A /* XXAsyncUdpSocket.m in Sources */,
+				2961410D1DCDE1E100901D1A /* __DyBundleManager.m in Sources */,
+				296141201DCE1E8300901D1A /* XXReceiveFileService.m in Sources */,
+				29CB983C1DCF341B00839A53 /* __DyDatabaseManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		29F588791DCD9439002A742F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29F5887A1DCD9439002A742F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29F5887C1DCD9439002A742F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DyInjectService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.dyinject.DyInjectService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		29F5887D1DCD9439002A742F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DyInjectService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.dyinject.DyInjectService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29F5886D1DCD9439002A742F /* Build configuration list for PBXProject "DyInjectService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F588791DCD9439002A742F /* Debug */,
+				29F5887A1DCD9439002A742F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29F5887B1DCD9439002A742F /* Build configuration list for PBXNativeTarget "DyInjectService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F5887C1DCD9439002A742F /* Debug */,
+				29F5887D1DCD9439002A742F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29F5886A1DCD9439002A742F /* Project object */;
+}
