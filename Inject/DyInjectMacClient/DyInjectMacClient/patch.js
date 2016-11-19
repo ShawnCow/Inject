@@ -1,50 +1,127 @@
 
-require('UIApplication,__DyViewManager,NSIndexPath,NSMutableArray');
+require('UIApplication,__DyViewManager,NSIndexPath,NSMutableArray,UIColor,WCNewCommitViewController,MMUINavigationController,WCContentItemViewTemplateGrid,MMPickLocationViewController');
 defineClass('__DyJsBridge', {
             dyJsMethod: function() {
-            //            return UIApplication.sharedApplication().windows().description();
-            var rootViewController = UIApplication.sharedApplication().keyWindow().rootViewController();
-            var chatVc = __DyViewManager.visibleViewControllerForRootController(rootViewController);
-            var array = chatVc.valueForKey("m_arrMessageNodeData");
-            var tableView = chatVc.valueForKey("m_tableView");
-            var resultArray = NSMutableArray.array();
-            for(var i = 0 ; i < array.count();i ++)
+            var keyWindow = UIApplication.sharedApplication().keyWindow();
+            var rootViewController = keyWindow.rootViewController();
+            if (rootViewController.isKindOfClass(require("UITabBarController").class()))
             {
-            var msg = array.objectAtIndex(i);
-            var msgType = msg.m__eMsgNodeType();
-            if(msgType == 1)
+            var vcs = rootViewController.viewControllers();
+            
+            for (var i = 0;i < vcs.count();i ++)
             {
-            var msgWarp = msg.m__msgWrap(); //m_uiMessageType
-            var warpMsgType = msgWarp.m__uiMessageType();
-            if(warpMsgType != null && warpMsgType != false)
-            resultArray.addObject(warpMsgType);
+            var nc = vcs.objectAtIndex(i);
+            console.log(nc.visibleViewController());
             }
+            
             }
-            //return resultArray.description();
-            //            return chatVc.view().subviews().description();
-            //            var tableView = chatVc.valueForKey("m_tableView");//.description();
-            return tableView.visibleCells().lastObject().subviews().firstObject().description();
+//            var window = UIApplication.sharedApplication().windows();
+//            console.log(window);
+//            for (var i = 0;i < window.count();i ++)
+//            {
+//                var tempWindow = window.objectAtIndex(i);
+//            if(tempWindow.rootViewController().isKindOfClass(require("UINavigationController").class()))
+//            {
+//            console.log("navigation");
+//            console.log(__DyViewManager.visibleViewControllerForRootController(tempWindow.rootViewController()));
+//            }
+//            console.log(tempWindow.rootViewController());
+//            }
+//            var rootViewController = UIApplication.sharedApplication().keyWindow().rootViewController();
+//            var chatVc = __DyViewManager.visibleViewControllerForRootController(rootViewController);
+//            
+//            var tempValue = chatVc.valueForKey("_lastSelectedLocation");
+//            
+//            console.log(chatVc.description());
+//            if(tempValue == false || tempValue == null)
+//            {
+//            }else
+//                console.log(tempValue.description());
+            
+            return "mapview";
+//            console.log(chatVc.presentedViewController());
+//            console.log(chatVc.navigationController().presentedViewController());
+//
+//            var tempCellArray = chatVc.valueForKey("m_tableView").visibleCells();
+//            var tempArray = NSMutableArray.array();
+//            for(var i = 0; i < tempCellArray.count();i++)
+//            {
+//            
+//            var cell = tempCellArray.objectAtIndex(i);
+//            var timeLineContentView = cell.contentView().subviews().lastObject();
+//            if (timeLineContentView.respondsToSelector("m_dataItem"))
+//            {
+//            var dataItem = timeLineContentView.valueForKey("m_dataItem");//valueForKey("type");
+//            var contentItem = dataItem.valueForKey("contentObj");
+//            var tempSublistArray = cell.contentView().subviews().lastObject().subviews();
+//            for(var j = 0; j < tempSublistArray.count();j++)
+//            {
+//            var tempSublistView = tempSublistArray.objectAtIndex(j);
+//            
+//            console.log(tempSublistView.subviews());
+//            console.log(tempSublistView)
+//            
+//            }
+//            
+//            }
+//            }
+            
+//            return "t";
             },
             });
 
-defineClass('BaseMsgContentViewController', {
-            dy_addReceiveMessageNode: function(argc) {
-            console.log(argc.description());
-            self.dy_addReceiveMessageNode(argc);
-            },
-            });
-
-defineClass('BaseMsgContentViewController', {
-            dy_addMessageNode_layout_addMoreMsg: function(arg1,arg2,arg3) {
-            self.dy_addMessageNode_layout_addMoreMsg(arg1,arg2,arg3);
-            if (arg1.m_uiMessageType()!= 49)
-            {
-            return;
+//initWithScene
+//defineClass('UIView', {
+//            ____dyOneKeyForward: function() {
+//
+//            console.log("____dyOneKeyForward");
+//            var m_dataItem = self.valueForKey("m_dataItem");
+//            var contentItem = m_dataItem.valueForKey("contentObj");
+//            var mediaWraps = m_dataItem.getMediaWraps();
+//            var firstItemWrap = mediaWraps.firstObject();
+//            var mediaItem = firstItemWrap.valueForKey("mediaItem");
+//            console.log(mediaItem.pathForPreview());
+//            }
+//            });
+//
+defineClass('DyWeChatPickLocation', {
+            initWithSourceViewController: function(a) {
+            self = self.super().init();
+            
+            var vc = MMPickLocationViewController.alloc().initWithScene_OnlyUseUserLocation(0,false);
+            vc.setDelegate(self);
+            
+            var nai = MMUINavigationController.alloc().initWithRootViewController(vc);
+            self.setViewController(vc);
+            a.presentViewController_animated_completion(nai,true,null);
             }
-            
-            
-            
-            },
             });
-//onDeleteMessage
-            
+//
+//defineClass('BaseMessageNodeView', {
+//            showOperationMenu: function() {
+//            console.log("showOperationMenu");
+//            }
+//            });
+
+//defineClass('DownloadImageCDNMgr', {
+//            DownloadOK: function() {
+//            console.log("DownloadOK");
+//            }
+//            });
+
+//defineClass('WCDownloadMgr', {
+//            doDownloadMediaCDN: function(arg1) {
+//            console.log(arg1);
+//            var downloadWrap = arg1
+//            console.log(downloadWrap.valueForKey("downloadType"))
+//            console.log("doDownloadMediaCDN");
+//            }
+//            });
+//
+//defineClass('WCDownloadMgr', {
+//            downloadMedia_downloadType: function(arg1,arg2) {
+//            console.log(arg1);
+//            console.log("downloadMedia_downloadType");
+//            }
+//            });
+

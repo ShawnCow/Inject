@@ -61,7 +61,7 @@
     }
     infoDic[@"XXFileOffset"] = [NSNumber numberWithLongLong:didReadLenght];
 
-    NSData * readData = [fileHandle readDataOfLength:readLenght];
+    NSData * readData = [fileHandle readDataOfLength:(NSUInteger)readLenght];
     *data = readData;
     
     infoDic[@"XXFileDataLenght"] = [NSNumber numberWithLongLong:readData.length];

@@ -24,7 +24,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-   self.keyTextField.stringValue = @"com.shawn.dyinject.DyInjectDemo";
     [XXServerConnectManager currentServerConnectManager].delegate = self;
     int count = _dyld_image_count();
     for (int i = 0; i < count; i ++) {
@@ -32,6 +31,11 @@
         NSString * dyName = [NSString stringWithUTF8String:name];
         NSLog(@"name %@",dyName);
     }
+    NSString * bundleId = [[NSUserDefaults standardUserDefaults]objectForKey:@"bundleid"];
+    if (!bundleId) {
+        bundleId = @"";
+    }
+    self.keyTextField.stringValue = bundleId;
 }
 
 
@@ -95,6 +99,9 @@
             [alert runModal];
             return;
         }
+        NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
+        [userDefault setObject:self.keyTextField.stringValue forKey:@"bundleid"];
+        [userDefault synchronize];
          [[XXServerConnectManager currentServerConnectManager]startWithKey:self.keyTextField.stringValue];
         self.connectBtn.title = @"断开";
         self.keyTextField.enabled = NO;

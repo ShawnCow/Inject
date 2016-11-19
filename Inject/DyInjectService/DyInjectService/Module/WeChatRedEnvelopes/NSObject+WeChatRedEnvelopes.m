@@ -74,11 +74,13 @@
 
 + (void)load
 {
+    // 纯代码抢红包
     Class msgClass = NSClassFromString(@"CMessageMgr");
     if (msgClass) {
         [msgClass ___exchangeMethod:@selector(AsyncOnAddMsg:MsgWrap:) withMethod:@selector(DyAsyncOnAddMsg:MsgWrap:)];
     }
 //    return;
+//    UI 抢代码
 //    Class msgClass = NSClassFromString(@"BaseMsgContentViewController");//Envelopes
 //    if (msgClass) {
 //        [msgClass ___exchangeMethod:@selector(addMessageNode:layout:addMoreMsg:) withMethod:@selector(dy_addMessageNode:layout:addMoreMsg:)];
