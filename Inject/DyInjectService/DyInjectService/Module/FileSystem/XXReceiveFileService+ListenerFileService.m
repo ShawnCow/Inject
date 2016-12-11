@@ -16,7 +16,7 @@
 
 + (void)load
 {   
-    [[__XXDyInjectRouter shareDyInjectRouter]registerRouterWithKey:@"filemanager" completion:^NSString *(id <XXPacketProtocol> aPacket) {
+    [[__XXDyInjectRouter shareDyInjectRouter]registerRouterWithKey:@"filemanager" completion:^id (id <XXPacketProtocol> aPacket) {
         NSDictionary * packet = [aPacket packetDictionary];
         NSString * action = packet[@"type"];
         if ([action isEqualToString:@"show"]) {

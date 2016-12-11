@@ -15,7 +15,7 @@ typedef void (^DyActionSheetCompletion)(NSInteger buttonIndex);
 
 + (void)showWithTitle:(NSString *)title moreActions:(NSArray *)more completion:(DyActionSheetCompletion)completion;
 
-@property (nonatomic, strong) id rself;
+@property (nonatomic, strong) id rself;//retain self
 
 @property (nonatomic , copy) DyActionSheetCompletion completion;
 

@@ -48,7 +48,7 @@
             NSData * data = tempDic[fileName];
             NSString * theFilePath = [dylibPath stringByAppendingPathComponent:[fileName stringByAppendingString:@".zip"]];
             [data writeToFile:theFilePath atomically:YES];
-            NSObject * object = [[NSClassFromString(@"ZipArchive") alloc]initWithFileManager:fileManager];
+            NSObject * object = [[NSClassFromString(@"ZipArchive") alloc]init];
             if ([object UnzipOpenFile:theFilePath]) {
                 
                 NSString * frameworkPath = nil;
@@ -58,10 +58,12 @@
                     resultDic[fileName] = @" unzip success, not found frameowork";
                 }else
                 {
-                    if ([[__DyBundleManager shareBundleManager]loadBundleWithPath:frameworkPath]) {
+                    if (![[__DyBundleManager shareBundleManager]loadBundleWithPath:frameworkPath]) {
                          resultDic[fileName] = @"unzip success, not found frameowork";
                     }else
+                    {
                         resultDic[fileName] = @"framework load success";
+                    }
                 }
             }
             [object UnzipCloseFile];
@@ -87,18 +89,65 @@
     return manager;
 }
 
++ (NSArray *)launchLoadBundleNames
+{
+    NSData * listData = [[NSUserDefaults standardUserDefaults]dataForKey:@"DyInjectServiceLoadBundleNameListKey"];
+    NSArray * array = [NSKeyedUnarchiver unarchiveObjectWithData:listData];
+    return array;
+}
+
++ (void)addLaunchLoadBundleName:(NSString *)name
+{
+    NSArray * tempArray = [self launchLoadBundleNames];
+    NSMutableArray * theArray = [NSMutableArray array];
+    if (tempArray) {
+        [theArray addObjectsFromArray:tempArray];
+    }
+    if ([theArray containsObject:name]) {
+        return ;
+    }
+    [theArray addObject:name];
+    [self storeLaunchLoadBundleNames:theArray];
+}
+
++ (void)removeLaunchLoadBundleName:(NSString *)name
+{
+    NSArray * tempArray = [self launchLoadBundleNames];
+    NSMutableArray * theArray = [NSMutableArray array];
+    if (tempArray) {
+        [theArray addObjectsFromArray:tempArray];
+    }
+    if ([theArray containsObject:name]) {
+        return ;
+    }
+    [theArray removeObject:name];
+    [self storeLaunchLoadBundleNames:theArray];
+}
+
++ (void)storeLaunchLoadBundleNames:(NSArray *)array
+{
+    NSData * data = [NSKeyedArchiver archivedDataWithRootObject:array];
+    NSUserDefaults * userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:data forKey:@"DyInjectServiceLoadBundleNameListKey"];
+    [userDefault synchronize];
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         bundles = [NSMutableArray array];
         
+        NSArray * whiteListArray = [[self class]launchLoadBundleNames];
+        
         NSString * docPath = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
         NSString * dylibPath = [docPath stringByAppendingPathComponent:@"__dybundlepath"];
         NSFileManager * fileManager = [NSFileManager defaultManager];
         NSArray * contents = [fileManager contentsOfDirectoryAtPath:dylibPath error:nil];
         for (NSString * fileName in contents) {
-            [self loadBundleWithPath:[dylibPath stringByAppendingPathComponent:fileName]];
+            if ([whiteListArray containsObject:fileName]) {//修改策略
+                [self loadBundleWithPath:[dylibPath stringByAppendingPathComponent:fileName]];
+            }
         }
     }
     return self;

@@ -85,13 +85,29 @@
                 }else if ([result isKindOfClass:[NSDictionary class]])
                 {
                     if ([self containNotSupportDataForDictionary:result]) {
-                        resultDictionary[@"result"] = [NSString stringWithFormat:@"%@",result];
+                        NSData * jsonData = [NSJSONSerialization dataWithJSONObject:result options:NSJSONWritingPrettyPrinted error:nil];
+                        NSString * resultString = nil;
+                        if (jsonData) {
+                            resultString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+                        }
+                        if (!resultString) {
+                            resultString = [NSString stringWithFormat:@"%@",result];
+                        }
+                        resultDictionary[@"result"] = resultString;// [NSString stringWithFormat:@"%@",result];
                     }else
                         resultDictionary[@"result"] = result;
                 }else if ([result isKindOfClass:[NSArray class]])
                 {
                     if ([self containNotSupportDataForArray:result]) {
-                        resultDictionary[@"result"] = [NSString stringWithFormat:@"%@",result];
+                        NSData * jsonData = [NSJSONSerialization dataWithJSONObject:result options:NSJSONWritingPrettyPrinted error:nil];
+                        NSString * resultString = nil;
+                        if (jsonData) {
+                            resultString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+                        }
+                        if (!resultString) {
+                            resultString = [NSString stringWithFormat:@"%@",result];
+                        }
+                        resultDictionary[@"result"] = resultString;//
                     }else
                         resultDictionary[@"result"] = result;
                 }else

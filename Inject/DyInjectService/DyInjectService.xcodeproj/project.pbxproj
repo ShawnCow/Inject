@@ -7,36 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2907730A1DDF56AE006E5C81 /* DyDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 290773081DDF56AE006E5C81 /* DyDownloadManager.h */; };
-		2907730B1DDF56AE006E5C81 /* DyDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 290773091DDF56AE006E5C81 /* DyDownloadManager.m */; };
-		2907730E1DDF5BB2006E5C81 /* UIImage+MMImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2907730C1DDF5BB2006E5C81 /* UIImage+MMImage.h */; };
-		2907730F1DDF5BB2006E5C81 /* UIImage+MMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2907730D1DDF5BB2006E5C81 /* UIImage+MMImage.m */; };
-		290773121DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.h in Headers */ = {isa = PBXBuildFile; fileRef = 290773101DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.h */; };
-		290773131DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290773111DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.m */; };
-		290773161DE05BC5006E5C81 /* UIButton+Crash.h in Headers */ = {isa = PBXBuildFile; fileRef = 290773141DE05BC5006E5C81 /* UIButton+Crash.h */; };
-		290773171DE05BC5006E5C81 /* UIButton+Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = 290773151DE05BC5006E5C81 /* UIButton+Crash.m */; };
-		2907731A1DE05CFB006E5C81 /* NSObject+BundleIdCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 290773181DE05CFB006E5C81 /* NSObject+BundleIdCheck.h */; };
-		2907731B1DE05CFB006E5C81 /* NSObject+BundleIdCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 290773191DE05CFB006E5C81 /* NSObject+BundleIdCheck.m */; };
-		2907731E1DE071C7006E5C81 /* DyWeChatPickLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2907731C1DE071C7006E5C81 /* DyWeChatPickLocation.h */; };
-		2907731F1DE071C7006E5C81 /* DyWeChatPickLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2907731D1DE071C7006E5C81 /* DyWeChatPickLocation.m */; };
-		290773221DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 290773201DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.h */; };
-		290773231DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290773211DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.m */; };
-		290ED22F1DDB3F50006FCF6B /* NSObject+LocationMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 290ED22D1DDB3F50006FCF6B /* NSObject+LocationMock.h */; };
-		290ED2301DDB3F50006FCF6B /* NSObject+LocationMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 290ED22E1DDB3F50006FCF6B /* NSObject+LocationMock.m */; };
-		290ED2341DDB676A006FCF6B /* NSObject+WeChatTimeLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 290ED2321DDB676A006FCF6B /* NSObject+WeChatTimeLine.h */; };
-		290ED2351DDB676A006FCF6B /* NSObject+WeChatTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 290ED2331DDB676A006FCF6B /* NSObject+WeChatTimeLine.m */; };
-		290ED2801DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 290ED27E1DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.h */; };
-		290ED2811DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 290ED27F1DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.m */; };
 		290ED2981DDDEBBA006FCF6B /* DyActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 290ED2961DDDEBBA006FCF6B /* DyActionSheet.h */; };
 		290ED2991DDDEBBA006FCF6B /* DyActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 290ED2971DDDEBBA006FCF6B /* DyActionSheet.m */; };
+		29284F3D1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 29284F3B1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.h */; };
+		29284F3E1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 29284F3C1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.m */; };
+		29284F411DF3F3A000982F0A /* DyAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29284F3F1DF3F3A000982F0A /* DyAlertView.h */; };
+		29284F421DF3F3A000982F0A /* DyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29284F401DF3F3A000982F0A /* DyAlertView.m */; };
 		2928CB3B1DCF79BA004184F6 /* __DyViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2928CB391DCF79BA004184F6 /* __DyViewManager.h */; };
 		2928CB3C1DCF79BA004184F6 /* __DyViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB3A1DCF79BA004184F6 /* __DyViewManager.m */; };
 		2928CB4B1DD0AD8A004184F6 /* __XXDyInjectRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2928CB471DD0AD8A004184F6 /* __XXDyInjectRouter.h */; };
 		2928CB4C1DD0AD8A004184F6 /* __XXDyInjectRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB481DD0AD8A004184F6 /* __XXDyInjectRouter.m */; };
 		2928CB581DD0ADEA004184F6 /* NSObject+DyInjectRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2928CB561DD0ADEA004184F6 /* NSObject+DyInjectRouter.h */; };
 		2928CB591DD0ADEA004184F6 /* NSObject+DyInjectRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB571DD0ADEA004184F6 /* NSObject+DyInjectRouter.m */; };
-		294E87081DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 294E87061DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h */; };
-		294E87091DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E87071DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m */; };
 		296140B41DCDD41C00901D1A /* __DyTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140B21DCDD41C00901D1A /* __DyTest.h */; };
 		296140B51DCDD41C00901D1A /* __DyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 296140B31DCDD41C00901D1A /* __DyTest.m */; };
 		296140EB1DCDD62400901D1A /* XXFilePacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 296140D71DCDD62400901D1A /* XXFilePacket.h */; };
@@ -83,36 +65,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		290773081DDF56AE006E5C81 /* DyDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyDownloadManager.h; sourceTree = "<group>"; };
-		290773091DDF56AE006E5C81 /* DyDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyDownloadManager.m; sourceTree = "<group>"; };
-		2907730C1DDF5BB2006E5C81 /* UIImage+MMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MMImage.h"; sourceTree = "<group>"; };
-		2907730D1DDF5BB2006E5C81 /* UIImage+MMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MMImage.m"; sourceTree = "<group>"; };
-		290773101DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DyChatMsgNoteView.h"; sourceTree = "<group>"; };
-		290773111DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DyChatMsgNoteView.m"; sourceTree = "<group>"; };
-		290773141DE05BC5006E5C81 /* UIButton+Crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Crash.h"; sourceTree = "<group>"; };
-		290773151DE05BC5006E5C81 /* UIButton+Crash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Crash.m"; sourceTree = "<group>"; };
-		290773181DE05CFB006E5C81 /* NSObject+BundleIdCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BundleIdCheck.h"; sourceTree = "<group>"; };
-		290773191DE05CFB006E5C81 /* NSObject+BundleIdCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BundleIdCheck.m"; sourceTree = "<group>"; };
-		2907731C1DE071C7006E5C81 /* DyWeChatPickLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyWeChatPickLocation.h; sourceTree = "<group>"; };
-		2907731D1DE071C7006E5C81 /* DyWeChatPickLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyWeChatPickLocation.m; sourceTree = "<group>"; };
-		290773201DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FindFriendEntryViewController.h"; sourceTree = "<group>"; };
-		290773211DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FindFriendEntryViewController.m"; sourceTree = "<group>"; };
-		290ED22D1DDB3F50006FCF6B /* NSObject+LocationMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LocationMock.h"; sourceTree = "<group>"; };
-		290ED22E1DDB3F50006FCF6B /* NSObject+LocationMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LocationMock.m"; sourceTree = "<group>"; };
-		290ED2321DDB676A006FCF6B /* NSObject+WeChatTimeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WeChatTimeLine.h"; sourceTree = "<group>"; };
-		290ED2331DDB676A006FCF6B /* NSObject+WeChatTimeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WeChatTimeLine.m"; sourceTree = "<group>"; };
-		290ED27E1DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WeChatNewTimeLine.h"; sourceTree = "<group>"; };
-		290ED27F1DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WeChatNewTimeLine.m"; sourceTree = "<group>"; };
 		290ED2961DDDEBBA006FCF6B /* DyActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyActionSheet.h; sourceTree = "<group>"; };
 		290ED2971DDDEBBA006FCF6B /* DyActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyActionSheet.m; sourceTree = "<group>"; };
+		29284F3B1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DyInjectObjectInfo.h"; sourceTree = "<group>"; };
+		29284F3C1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DyInjectObjectInfo.m"; sourceTree = "<group>"; };
+		29284F3F1DF3F3A000982F0A /* DyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyAlertView.h; sourceTree = "<group>"; };
+		29284F401DF3F3A000982F0A /* DyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyAlertView.m; sourceTree = "<group>"; };
 		2928CB391DCF79BA004184F6 /* __DyViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyViewManager.h; sourceTree = "<group>"; };
 		2928CB3A1DCF79BA004184F6 /* __DyViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyViewManager.m; sourceTree = "<group>"; };
 		2928CB471DD0AD8A004184F6 /* __XXDyInjectRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __XXDyInjectRouter.h; sourceTree = "<group>"; };
 		2928CB481DD0AD8A004184F6 /* __XXDyInjectRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __XXDyInjectRouter.m; sourceTree = "<group>"; };
 		2928CB561DD0ADEA004184F6 /* NSObject+DyInjectRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DyInjectRouter.h"; sourceTree = "<group>"; };
 		2928CB571DD0ADEA004184F6 /* NSObject+DyInjectRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DyInjectRouter.m"; sourceTree = "<group>"; };
-		294E87061DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WeChatRedEnvelopes.h"; sourceTree = "<group>"; };
-		294E87071DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WeChatRedEnvelopes.m"; sourceTree = "<group>"; };
 		296140B21DCDD41C00901D1A /* __DyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __DyTest.h; sourceTree = "<group>"; };
 		296140B31DCDD41C00901D1A /* __DyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = __DyTest.m; sourceTree = "<group>"; };
 		296140D71DCDD62400901D1A /* XXFilePacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXFilePacket.h; sourceTree = "<group>"; };
@@ -171,40 +135,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		290ED22C1DDB3F37006FCF6B /* LocationMock */ = {
-			isa = PBXGroup;
-			children = (
-				290ED22D1DDB3F50006FCF6B /* NSObject+LocationMock.h */,
-				290ED22E1DDB3F50006FCF6B /* NSObject+LocationMock.m */,
-				2907731C1DE071C7006E5C81 /* DyWeChatPickLocation.h */,
-				2907731D1DE071C7006E5C81 /* DyWeChatPickLocation.m */,
-				290773201DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.h */,
-				290773211DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.m */,
-			);
-			path = LocationMock;
-			sourceTree = "<group>";
-		};
-		290ED2311DDB4DC1006FCF6B /* WeChat */ = {
-			isa = PBXGroup;
-			children = (
-				290ED2321DDB676A006FCF6B /* NSObject+WeChatTimeLine.h */,
-				290ED2331DDB676A006FCF6B /* NSObject+WeChatTimeLine.m */,
-				290773081DDF56AE006E5C81 /* DyDownloadManager.h */,
-				290773091DDF56AE006E5C81 /* DyDownloadManager.m */,
-				2907730C1DDF5BB2006E5C81 /* UIImage+MMImage.h */,
-				2907730D1DDF5BB2006E5C81 /* UIImage+MMImage.m */,
-				290ED27E1DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.h */,
-				290ED27F1DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.m */,
-				290773101DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.h */,
-				290773111DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.m */,
-				290773141DE05BC5006E5C81 /* UIButton+Crash.h */,
-				290773151DE05BC5006E5C81 /* UIButton+Crash.m */,
-				290773181DE05CFB006E5C81 /* NSObject+BundleIdCheck.h */,
-				290773191DE05CFB006E5C81 /* NSObject+BundleIdCheck.m */,
-			);
-			path = WeChat;
-			sourceTree = "<group>";
-		};
 		2928CB381DCF79AB004184F6 /* ViewManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,21 +154,9 @@
 			path = ../../Router;
 			sourceTree = "<group>";
 		};
-		294E87051DD4C07200537666 /* WeChatRedEnvelopes */ = {
-			isa = PBXGroup;
-			children = (
-				294E87061DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h */,
-				294E87071DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m */,
-			);
-			path = WeChatRedEnvelopes;
-			sourceTree = "<group>";
-		};
 		296140B01DCDD3C700901D1A /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				290ED2311DDB4DC1006FCF6B /* WeChat */,
-				290ED22C1DDB3F37006FCF6B /* LocationMock */,
-				294E87051DD4C07200537666 /* WeChatRedEnvelopes */,
 				2928CB381DCF79AB004184F6 /* ViewManager */,
 				29CB98381DCF33F000839A53 /* Database */,
 				2961410E1DCDE28800901D1A /* FileSystem */,
@@ -386,6 +304,10 @@
 				29F589181DCD991B002A742F /* NSObject+__DyInjectSwizzle.m */,
 				290ED2961DDDEBBA006FCF6B /* DyActionSheet.h */,
 				290ED2971DDDEBBA006FCF6B /* DyActionSheet.m */,
+				29284F3F1DF3F3A000982F0A /* DyAlertView.h */,
+				29284F401DF3F3A000982F0A /* DyAlertView.m */,
+				29284F3B1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.h */,
+				29284F3C1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -400,7 +322,6 @@
 				29CB98431DCF3C9D00839A53 /* NSObject+__DyDatabase.h in Headers */,
 				290ED2981DDDEBBA006FCF6B /* DyActionSheet.h in Headers */,
 				2961411F1DCE1E8300901D1A /* XXReceiveFileService.h in Headers */,
-				290773121DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.h in Headers */,
 				29F5891D1DCD9929002A742F /* __DyInjectService.h in Headers */,
 				296140F61DCDD62400901D1A /* XXAsyncUdpSocket.h in Headers */,
 				2961410C1DCDE1E100901D1A /* __DyBundleManager.h in Headers */,
@@ -409,31 +330,23 @@
 				29CB983F1DCF3A9600839A53 /* __DyDatabaseItem.h in Headers */,
 				296140F81DCDD62400901D1A /* XXDeviceConnectManager.h in Headers */,
 				296141061DCDE03400901D1A /* __DyJsBridge.h in Headers */,
-				294E87081DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.h in Headers */,
 				296140F31DCDD62400901D1A /* XXPacketProtocol.h in Headers */,
 				2928CB581DD0ADEA004184F6 /* NSObject+DyInjectRouter.h in Headers */,
-				2907730A1DDF56AE006E5C81 /* DyDownloadManager.h in Headers */,
 				29F588781DCD9439002A742F /* DyInjectService.h in Headers */,
-				2907730E1DDF5BB2006E5C81 /* UIImage+MMImage.h in Headers */,
-				290773221DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.h in Headers */,
 				296140EF1DCDD62400901D1A /* XXInfoPacket.h in Headers */,
 				296140F11DCDD62400901D1A /* XXPacket.h in Headers */,
-				290773161DE05BC5006E5C81 /* UIButton+Crash.h in Headers */,
-				2907731E1DE071C7006E5C81 /* DyWeChatPickLocation.h in Headers */,
 				296140F41DCDD62400901D1A /* XXAsyncSocket.h in Headers */,
-				290ED2341DDB676A006FCF6B /* NSObject+WeChatTimeLine.h in Headers */,
 				296140EB1DCDD62400901D1A /* XXFilePacket.h in Headers */,
-				290ED2801DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.h in Headers */,
 				29F589191DCD991B002A742F /* NSObject+__DyInjectSwizzle.h in Headers */,
 				296141191DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.h in Headers */,
 				29CB983B1DCF341B00839A53 /* __DyDatabaseManager.h in Headers */,
 				2928CB4B1DD0AD8A004184F6 /* __XXDyInjectRouter.h in Headers */,
 				296141041DCDE03400901D1A /* __DyJPEngine.h in Headers */,
 				296141151DCE0E1300901D1A /* XXReceiveFileItem.h in Headers */,
+				29284F3D1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.h in Headers */,
 				2928CB3B1DCF79BA004184F6 /* __DyViewManager.h in Headers */,
 				296141211DCE1E8300901D1A /* XXFindDevice.h in Headers */,
-				290ED22F1DDB3F50006FCF6B /* NSObject+LocationMock.h in Headers */,
-				2907731A1DE05CFB006E5C81 /* NSObject+BundleIdCheck.h in Headers */,
+				29284F411DF3F3A000982F0A /* DyAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,30 +419,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29284F3E1DF3324B00982F0A /* NSObject+DyInjectObjectInfo.m in Sources */,
 				2928CB591DD0ADEA004184F6 /* NSObject+DyInjectRouter.m in Sources */,
-				290773171DE05BC5006E5C81 /* UIButton+Crash.m in Sources */,
 				296140F91DCDD62400901D1A /* XXDeviceConnectManager.m in Sources */,
 				296140FB1DCDD62400901D1A /* XXListenerConnectManager.m in Sources */,
-				294E87091DD4C08A00537666 /* NSObject+WeChatRedEnvelopes.m in Sources */,
-				2907731B1DE05CFB006E5C81 /* NSObject+BundleIdCheck.m in Sources */,
-				290773131DDFFE01006E5C81 /* UIView+DyChatMsgNoteView.m in Sources */,
-				290ED2811DDD9D66006FCF6B /* UIViewController+WeChatNewTimeLine.m in Sources */,
-				290ED2351DDB676A006FCF6B /* NSObject+WeChatTimeLine.m in Sources */,
+				29284F421DF3F3A000982F0A /* DyAlertView.m in Sources */,
 				296140B51DCDD41C00901D1A /* __DyTest.m in Sources */,
-				2907730B1DDF56AE006E5C81 /* DyDownloadManager.m in Sources */,
 				296140EC1DCDD62400901D1A /* XXFilePacket.m in Sources */,
 				296141161DCE0E1300901D1A /* XXReceiveFileItem.m in Sources */,
 				2928CB3C1DCF79BA004184F6 /* __DyViewManager.m in Sources */,
 				296140F51DCDD62400901D1A /* XXAsyncSocket.m in Sources */,
 				296141051DCDE03400901D1A /* __DyJPEngine.m in Sources */,
 				2961411A1DCE1CE900901D1A /* XXReceiveFileService+ListenerFileService.m in Sources */,
-				290ED2301DDB3F50006FCF6B /* NSObject+LocationMock.m in Sources */,
 				29F5891A1DCD991B002A742F /* NSObject+__DyInjectSwizzle.m in Sources */,
 				2928CB4C1DD0AD8A004184F6 /* __XXDyInjectRouter.m in Sources */,
 				296141071DCDE03400901D1A /* __DyJsBridge.m in Sources */,
 				296141221DCE1E8300901D1A /* XXFindDevice.m in Sources */,
-				290773231DE077D3006E5C81 /* UIViewController+FindFriendEntryViewController.m in Sources */,
-				2907730F1DDF5BB2006E5C81 /* UIImage+MMImage.m in Sources */,
 				29CB98401DCF3A9600839A53 /* __DyDatabaseItem.m in Sources */,
 				296140F21DCDD62400901D1A /* XXPacket.m in Sources */,
 				296140F01DCDD62400901D1A /* XXInfoPacket.m in Sources */,
@@ -537,7 +442,6 @@
 				29F5891E1DCD9929002A742F /* __DyInjectService.m in Sources */,
 				296140F71DCDD62400901D1A /* XXAsyncUdpSocket.m in Sources */,
 				2961410D1DCDE1E100901D1A /* __DyBundleManager.m in Sources */,
-				2907731F1DE071C7006E5C81 /* DyWeChatPickLocation.m in Sources */,
 				296141201DCE1E8300901D1A /* XXReceiveFileService.m in Sources */,
 				290ED2991DDDEBBA006FCF6B /* DyActionSheet.m in Sources */,
 				29CB983C1DCF341B00839A53 /* __DyDatabaseManager.m in Sources */,

@@ -22,6 +22,9 @@
 		296141271DCE1EA500901D1A /* XXReceiveFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 296141241DCE1EA500901D1A /* XXReceiveFileService.m */; };
 		296141281DCE1EA500901D1A /* XXFindDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 296141261DCE1EA500901D1A /* XXFindDevice.m */; };
 		2961412B1DCE1F2B00901D1A /* XXReceiveFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961412A1DCE1F2B00901D1A /* XXReceiveFileItem.m */; };
+		296797601DFDBA9D0094F8A7 /* DyViewRevealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2967975F1DFDBA9D0094F8A7 /* DyViewRevealView.m */; };
+		296797651DFDBAB60094F8A7 /* DyRevealLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 296797621DFDBAB60094F8A7 /* DyRevealLayer.m */; };
+		296797661DFDBAB60094F8A7 /* DyRevealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 296797641DFDBAB60094F8A7 /* DyRevealView.m */; };
 		29DE0DDB1DD3728200B55B3E /* patch.js in Resources */ = {isa = PBXBuildFile; fileRef = 29DE0DDA1DD3728200B55B3E /* patch.js */; };
 		29F588B51DCD94D3002A742F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F588B41DCD94D3002A742F /* AppDelegate.m */; };
 		29F588B81DCD94D3002A742F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F588B71DCD94D3002A742F /* main.m */; };
@@ -63,6 +66,12 @@
 		296141261DCE1EA500901D1A /* XXFindDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXFindDevice.m; sourceTree = "<group>"; };
 		296141291DCE1F2B00901D1A /* XXReceiveFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXReceiveFileItem.h; sourceTree = "<group>"; };
 		2961412A1DCE1F2B00901D1A /* XXReceiveFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXReceiveFileItem.m; sourceTree = "<group>"; };
+		2967975E1DFDBA9D0094F8A7 /* DyViewRevealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyViewRevealView.h; sourceTree = "<group>"; };
+		2967975F1DFDBA9D0094F8A7 /* DyViewRevealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyViewRevealView.m; sourceTree = "<group>"; };
+		296797611DFDBAB60094F8A7 /* DyRevealLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyRevealLayer.h; sourceTree = "<group>"; };
+		296797621DFDBAB60094F8A7 /* DyRevealLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyRevealLayer.m; sourceTree = "<group>"; };
+		296797631DFDBAB60094F8A7 /* DyRevealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyRevealView.h; sourceTree = "<group>"; };
+		296797641DFDBAB60094F8A7 /* DyRevealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyRevealView.m; sourceTree = "<group>"; };
 		29DE0DDA1DD3728200B55B3E /* patch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = patch.js; sourceTree = "<group>"; };
 		29F588B01DCD94D3002A742F /* DyInjectMacClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyInjectMacClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F588B31DCD94D3002A742F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +99,7 @@
 		2928CB3D1DD0A614004184F6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2967975D1DFDBA740094F8A7 /* ViewManager */,
 				2928CB5D1DD0D201004184F6 /* Database */,
 				2928CB421DD0A772004184F6 /* JsBridge */,
 				2928CB3E1DD0A614004184F6 /* FileManager */,
@@ -179,6 +189,19 @@
 				296140C51DCDD60A00901D1A /* XXAsyncUdpSocket.m */,
 			);
 			path = Socket;
+			sourceTree = "<group>";
+		};
+		2967975D1DFDBA740094F8A7 /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				2967975E1DFDBA9D0094F8A7 /* DyViewRevealView.h */,
+				2967975F1DFDBA9D0094F8A7 /* DyViewRevealView.m */,
+				296797611DFDBAB60094F8A7 /* DyRevealLayer.h */,
+				296797621DFDBAB60094F8A7 /* DyRevealLayer.m */,
+				296797631DFDBAB60094F8A7 /* DyRevealView.h */,
+				296797641DFDBAB60094F8A7 /* DyRevealView.m */,
+			);
+			path = ViewManager;
 			sourceTree = "<group>";
 		};
 		29F588A71DCD94D3002A742F = {
@@ -366,10 +389,12 @@
 				2961412B1DCE1F2B00901D1A /* XXReceiveFileItem.m in Sources */,
 				2928CB451DD0A782004184F6 /* XXDyJsBridgeView.m in Sources */,
 				296140D21DCDD60A00901D1A /* XXDeviceConnectManager.m in Sources */,
+				296797651DFDBAB60094F8A7 /* DyRevealLayer.m in Sources */,
 				29F588B81DCD94D3002A742F /* main.m in Sources */,
 				296140CC1DCDD60A00901D1A /* XXFilePacket.m in Sources */,
 				2928CB541DD0ADA7004184F6 /* __XXDyInjectRouter.m in Sources */,
 				296140D01DCDD60A00901D1A /* XXAsyncSocket.m in Sources */,
+				296797661DFDBAB60094F8A7 /* DyRevealView.m in Sources */,
 				2928CB601DD0D20C004184F6 /* DyDatabaseView.m in Sources */,
 				29F588B51DCD94D3002A742F /* AppDelegate.m in Sources */,
 				2928CB411DD0A632004184F6 /* XXDyFileManagerView.m in Sources */,
@@ -378,6 +403,7 @@
 				296140D11DCDD60A00901D1A /* XXAsyncUdpSocket.m in Sources */,
 				296141281DCE1EA500901D1A /* XXFindDevice.m in Sources */,
 				2928CB5C1DD0BEF3004184F6 /* XXDyFileStack.m in Sources */,
+				296797601DFDBA9D0094F8A7 /* DyViewRevealView.m in Sources */,
 				296140CE1DCDD60A00901D1A /* XXInfoPacket.m in Sources */,
 				296140CF1DCDD60A00901D1A /* XXPacket.m in Sources */,
 			);

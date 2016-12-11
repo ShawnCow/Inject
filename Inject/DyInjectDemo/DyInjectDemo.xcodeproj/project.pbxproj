@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290773671DE198B6006E5C81 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 290773591DE198B6006E5C81 /* LICENSE */; };
+		290773681DE198B6006E5C81 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2907735C1DE198B6006E5C81 /* ioapi.c */; };
+		290773691DE198B6006E5C81 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 2907735E1DE198B6006E5C81 /* mztools.c */; };
+		2907736A1DE198B6006E5C81 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 290773601DE198B6006E5C81 /* unzip.c */; };
+		2907736B1DE198B6006E5C81 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 290773621DE198B6006E5C81 /* zip.c */; };
+		2907736C1DE198B6006E5C81 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 290773641DE198B6006E5C81 /* README.md */; };
+		2907736D1DE198B6006E5C81 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 290773661DE198B6006E5C81 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2907736F1DE19903006E5C81 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2907736E1DE19903006E5C81 /* libz.tbd */; };
 		2928CB311DCF50C9004184F6 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB271DCF50C9004184F6 /* FMDatabase.m */; };
 		2928CB321DCF50C9004184F6 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB291DCF50C9004184F6 /* FMDatabaseAdditions.m */; };
 		2928CB331DCF50C9004184F6 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2928CB2B1DCF50C9004184F6 /* FMDatabasePool.m */; };
@@ -40,6 +48,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		290773591DE198B6006E5C81 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2907735B1DE198B6006E5C81 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		2907735C1DE198B6006E5C81 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		2907735D1DE198B6006E5C81 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		2907735E1DE198B6006E5C81 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		2907735F1DE198B6006E5C81 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		290773601DE198B6006E5C81 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		290773611DE198B6006E5C81 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		290773621DE198B6006E5C81 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		290773631DE198B6006E5C81 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		290773641DE198B6006E5C81 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		290773651DE198B6006E5C81 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		290773661DE198B6006E5C81 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		2907736E1DE19903006E5C81 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		290ED29A1DDDED74006FCF6B /* DyActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DyActionSheet.h; path = ../../DyInjectService/DyInjectService/Utilities/DyActionSheet.h; sourceTree = "<group>"; };
 		2928CB261DCF50C9004184F6 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		2928CB271DCF50C9004184F6 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -75,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2907736F1DE19903006E5C81 /* libz.tbd in Frameworks */,
 				2928CB371DCF5123004184F6 /* libsqlite3.0.tbd in Frameworks */,
 				29F589131DCD965B002A742F /* DyInjectService.framework in Frameworks */,
 			);
@@ -83,6 +106,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290773581DE198B6006E5C81 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				290773591DE198B6006E5C81 /* LICENSE */,
+				2907735A1DE198B6006E5C81 /* minizip */,
+				290773641DE198B6006E5C81 /* README.md */,
+				290773651DE198B6006E5C81 /* ZipArchive.h */,
+				290773661DE198B6006E5C81 /* ZipArchive.m */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		2907735A1DE198B6006E5C81 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				2907735B1DE198B6006E5C81 /* crypt.h */,
+				2907735C1DE198B6006E5C81 /* ioapi.c */,
+				2907735D1DE198B6006E5C81 /* ioapi.h */,
+				2907735E1DE198B6006E5C81 /* mztools.c */,
+				2907735F1DE198B6006E5C81 /* mztools.h */,
+				290773601DE198B6006E5C81 /* unzip.c */,
+				290773611DE198B6006E5C81 /* unzip.h */,
+				290773621DE198B6006E5C81 /* zip.c */,
+				290773631DE198B6006E5C81 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 		2928CB251DCF50BA004184F6 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +155,7 @@
 		296140AD1DCDD1ED00901D1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2907736E1DE19903006E5C81 /* libz.tbd */,
 				2928CB361DCF5123004184F6 /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
@@ -138,6 +190,7 @@
 				29DE0DD71DD36D3700B55B3E /* AsyncUdpSocket.m */,
 				29F588F51DCD95F7002A742F /* ViewController.h */,
 				29F588F61DCD95F7002A742F /* ViewController.m */,
+				290773581DE198B6006E5C81 /* ZipArchive */,
 				2928CB251DCF50BA004184F6 /* New Group */,
 				29F588F81DCD95F7002A742F /* Main.storyboard */,
 				29F588FB1DCD95F7002A742F /* Assets.xcassets */,
@@ -219,6 +272,7 @@
 			files = (
 				29F588FF1DCD95F7002A742F /* LaunchScreen.storyboard in Resources */,
 				29F588FC1DCD95F7002A742F /* Assets.xcassets in Resources */,
+				290773671DE198B6006E5C81 /* LICENSE in Resources */,
 				29F588FA1DCD95F7002A742F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,12 +286,18 @@
 			files = (
 				29F588F71DCD95F7002A742F /* ViewController.m in Sources */,
 				29DE0DD91DD36D3700B55B3E /* AsyncUdpSocket.m in Sources */,
+				290773691DE198B6006E5C81 /* mztools.c in Sources */,
 				2928CB331DCF50C9004184F6 /* FMDatabasePool.m in Sources */,
+				2907736A1DE198B6006E5C81 /* unzip.c in Sources */,
 				29F588F41DCD95F7002A742F /* AppDelegate.m in Sources */,
 				29DE0DD81DD36D3700B55B3E /* AsyncSocket.m in Sources */,
 				2928CB341DCF50C9004184F6 /* FMDatabaseQueue.m in Sources */,
 				29F588F11DCD95F7002A742F /* main.m in Sources */,
 				2928CB311DCF50C9004184F6 /* FMDatabase.m in Sources */,
+				290773681DE198B6006E5C81 /* ioapi.c in Sources */,
+				2907736B1DE198B6006E5C81 /* zip.c in Sources */,
+				2907736D1DE198B6006E5C81 /* ZipArchive.m in Sources */,
+				2907736C1DE198B6006E5C81 /* README.md in Sources */,
 				2928CB351DCF50C9004184F6 /* FMResultSet.m in Sources */,
 				2928CB321DCF50C9004184F6 /* FMDatabaseAdditions.m in Sources */,
 			);

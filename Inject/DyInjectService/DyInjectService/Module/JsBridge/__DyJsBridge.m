@@ -54,7 +54,7 @@
             XXPacket * p = [[XXPacket alloc]initWithAction:@"jsbridge" infoDic:sendDic packetData:nil];
             [[XXListenerConnectManager currentListenerConnectManager]inQueueWithPacket:p];
         } @finally {
-            
+            return  @"error";
         }
         if (!exeResult) {
             exeResult = @"unknow";

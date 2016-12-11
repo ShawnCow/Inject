@@ -33,7 +33,6 @@
     if (self.status != XXFindDeviceStatusNone) {
         return NO;
     }
-    
     _netService = [[NSNetService alloc]initWithDomain:@"local." type:@"_marco._tcp" name:@"" port:7777];
     NSString * tempKey = self.key;
     if (tempKey == nil) {
@@ -53,6 +52,7 @@
     if (self.status != XXFindDeviceStatusNone) {
         return NO;
     }
+    NSLog(@"start find");
     _services = [NSMutableArray array];
     _netServiceBrowser = [[NSNetServiceBrowser alloc] init];
     _netServiceBrowser.delegate = self;
@@ -114,6 +114,7 @@
 
 - (void)netServiceBrowser:(NSNetServiceBrowser *)netServiceBrowser didFindService:(NSNetService *)netService moreComing:(BOOL)moreServicesComing
 {
+    NSLog(@"-------------------%s",__FUNCTION__);
     [_services addObject:netService];
     netService.delegate  = self;
     [netService resolveWithTimeout:5];

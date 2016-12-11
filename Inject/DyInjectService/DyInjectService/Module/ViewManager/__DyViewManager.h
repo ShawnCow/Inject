@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 视图模块
+ */
 @interface __DyViewManager : NSObject
 
 @end

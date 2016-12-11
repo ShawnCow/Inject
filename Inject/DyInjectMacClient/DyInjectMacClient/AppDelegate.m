@@ -88,6 +88,24 @@
     XXPacket * p = [[XXPacket alloc]initWithAction:@"database" infoDic:dic packetData:nil];
     [[XXServerConnectManager currentServerConnectManager]inQueueWithPacket:p];
 }
+- (IBAction)test:(id)sender {
+    [self bundleTest];
+}
+
+-(void)bundleTest
+{
+    NSData * frameworkZipData = [NSData dataWithContentsOfFile:@"/Users/Shawn/Desktop/1.zip"];
+    NSMutableArray * zips = [NSMutableArray array];
+    if (frameworkZipData) {
+        NSMutableDictionary * frameDic = [NSMutableDictionary dictionary];
+        [frameDic setObject:frameworkZipData forKey:@"DyLoadBundleTest"];
+        [zips addObject:frameDic];
+    }
+    NSMutableDictionary * dic = [NSMutableDictionary dictionary];
+    dic[@"zips"] = zips;
+    [[XXServerConnectManager currentServerConnectManager]inQueueWithPacket:[[XXPacket alloc]initWithAction:@"bundlemanager" infoDic:dic packetData:nil]];
+}
+
 #pragma mark - 
 
 - (IBAction)connectBtnAction:(id)sender {

@@ -23,7 +23,7 @@
             parameter = @[key];
         }
     }
-    [[__DyDatabaseManager shareDatabaseManager]hookRecordWithType:type sql:nil parameter:parameter];
+//    [[__DyDatabaseManager shareDatabaseManager]hookRecordWithType:type sql:nil parameter:parameter];
     
     // add database point to custom service
     [[__DyDatabaseManager shareDatabaseManager] handleDatabase:self];
@@ -33,7 +33,7 @@
 
 - (id)__dyexecuteQuery:(NSString *)sql withArgumentsInArray:(NSArray*)arrayArgs orDictionary:(NSDictionary *)dictionaryArgs orVAList:(va_list)args
 {
-    NSString * type = [NSString stringWithFormat:@"%s",__FUNCTION__];
+//    NSString * type = [NSString stringWithFormat:@"%s",__FUNCTION__];
     NSArray * parameter = nil;
     if (arrayArgs) {
         parameter = arrayArgs;
@@ -41,7 +41,7 @@
     {
         parameter = @[dictionaryArgs];
     }
-    [[__DyDatabaseManager shareDatabaseManager]hookRecordWithType:type sql:sql parameter:parameter];
+//    [[__DyDatabaseManager shareDatabaseManager]hookRecordWithType:type sql:sql parameter:parameter];
     
     // add database point to custom service
     [[__DyDatabaseManager shareDatabaseManager] handleDatabase:self];
@@ -61,7 +61,7 @@
         parameter = @[dictionaryArgs];
     }
     
-    [[__DyDatabaseManager shareDatabaseManager]hookRecordWithType:type sql:sql parameter:parameter];
+//    [[__DyDatabaseManager shareDatabaseManager]hookRecordWithType:type sql:sql parameter:parameter];
     
     // add database point to custom service
     [[__DyDatabaseManager shareDatabaseManager] handleDatabase:self];

@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 bang. All rights reserved.
 //
 
-/// 直接 拷贝的 JSPatch的源代码, 为了防止目标app没有夹带JSPatch的库
+///
+/**
+ 直接 拷贝的 JSPatch的源代码, 为了防止目标app没有夹带JSPatch的库
+ @return ''
+ */
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 

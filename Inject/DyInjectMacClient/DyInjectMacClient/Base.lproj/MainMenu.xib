@@ -836,7 +836,7 @@
                                             <rect key="frame" x="5" y="116" width="440" height="100"/>
                                             <clipView key="contentView" id="Rb3-Gu-CR0">
                                                 <rect key="frame" x="1" y="1" width="438" height="98"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="bgh-md-RhQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="438" height="98"/>
@@ -881,7 +881,7 @@
                                             <rect key="frame" x="5" y="31" width="440" height="80"/>
                                             <clipView key="contentView" id="sS7-aZ-MbT">
                                                 <rect key="frame" x="1" y="1" width="438" height="78"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="9Ei-QH-gSM">
                                                         <rect key="frame" x="0.0" y="0.0" width="438" height="78"/>
@@ -1114,14 +1114,66 @@
                                     </connections>
                                 </view>
                             </tabViewItem>
+                            <tabViewItem label="ViewManager" identifier="" id="pxw-o6-jPo">
+                                <view key="view" id="G3q-dP-aPi" customClass="DyViewRevealView">
+                                    <rect key="frame" x="10" y="33" width="450" height="272"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Qhh-jn-ktM" customClass="DyRevealView">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="272"/>
+                                        </customView>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nh2-oQ-XKt">
+                                            <rect key="frame" x="364" y="241" width="87" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="d6l-dJ-b0O"/>
+                                                <constraint firstAttribute="width" constant="75" id="uhb-or-urg"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="push" title="刷新" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aWv-qW-hEz">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="btnAction:" target="G3q-dP-aPi" id="4DX-wZ-rBe"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Qhh-jn-ktM" firstAttribute="top" secondItem="G3q-dP-aPi" secondAttribute="top" id="EL5-WN-bPz"/>
+                                        <constraint firstItem="nh2-oQ-XKt" firstAttribute="top" secondItem="G3q-dP-aPi" secondAttribute="top" constant="3" id="JnW-YO-fYs"/>
+                                        <constraint firstAttribute="trailing" secondItem="Qhh-jn-ktM" secondAttribute="trailing" id="U4K-3q-Few"/>
+                                        <constraint firstItem="Qhh-jn-ktM" firstAttribute="leading" secondItem="G3q-dP-aPi" secondAttribute="leading" id="eI0-HG-QaZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="nh2-oQ-XKt" secondAttribute="trailing" constant="5" id="eZt-v0-Xb9"/>
+                                        <constraint firstAttribute="bottom" secondItem="Qhh-jn-ktM" secondAttribute="bottom" id="rHs-hz-4Bq"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="contentView" destination="Qhh-jn-ktM" id="dNU-hw-fzI"/>
+                                    </connections>
+                                </view>
+                            </tabViewItem>
                         </tabViewItems>
                     </tabView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cio-0m-Kib">
+                        <rect key="frame" x="318" y="320" width="81" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="F4F-0f-gpn"/>
+                            <constraint firstAttribute="height" constant="21" id="O1K-yb-hCJ"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Test" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L1p-L2-gvX">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="test:" target="Voe-Tx-rLC" id="AQz-dF-0NT"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3a7-m8-shm" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="12" id="0p4-RS-n4t"/>
                     <constraint firstItem="zGy-NR-lwC" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="12" id="2zn-Ua-BsU"/>
                     <constraint firstAttribute="bottom" secondItem="zGy-NR-lwC" secondAttribute="bottom" constant="12" id="CA0-WV-mvQ"/>
+                    <constraint firstItem="cio-0m-Kib" firstAttribute="leading" secondItem="Skw-X4-9qP" secondAttribute="trailing" constant="12" id="HhT-eu-Tf4"/>
                     <constraint firstItem="Skw-X4-9qP" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="13" id="Rig-4o-T78"/>
+                    <constraint firstItem="cio-0m-Kib" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="12" id="aYA-bt-1eb"/>
                     <constraint firstAttribute="trailing" secondItem="zGy-NR-lwC" secondAttribute="trailing" constant="12" id="cif-me-lhy"/>
                     <constraint firstItem="zGy-NR-lwC" firstAttribute="top" secondItem="Skw-X4-9qP" secondAttribute="bottom" constant="12" id="dJB-Ug-a5l"/>
                     <constraint firstItem="Skw-X4-9qP" firstAttribute="leading" secondItem="3a7-m8-shm" secondAttribute="trailing" constant="10" id="tkM-Ae-Jh0"/>

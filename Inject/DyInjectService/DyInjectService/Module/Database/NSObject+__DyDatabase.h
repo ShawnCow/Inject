@@ -11,7 +11,6 @@
 @interface NSObject (__DyDatabase)
 
 // FMDatabase
-- (BOOL)__dysetKey:(NSString*)key;
 
 - (BOOL)__dysetKeyWithData:(NSData *)keyDat;
 
