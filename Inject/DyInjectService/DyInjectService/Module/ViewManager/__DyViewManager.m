@@ -19,7 +19,7 @@
         NSDictionary * dic = [packet packetDictionary];
         NSString * type = dic[@"type"];
         if ([type isEqualToString:@"view"]) {
-            return [self currentAllViewInfoWaitMainThead:YES];
+            return [self currentAllViewInfo];
         }else if ([type isEqualToString:@"rootviewcontroller"])
         {
             return [NSString stringWithFormat:@"%@",[self visibleViewControllerForRootController:[[[UIApplication sharedApplication]keyWindow]rootViewController]]];
@@ -46,52 +46,52 @@
         return viewController;
 }
 
+
 static dispatch_semaphore_t lock = nil;
-static dispatch_semaphore_t mainLock = nil;
-/**
- 获取当前所有的view信息 本方法为单线程调用,不允许多线程调用,多线程调用会导致数据不稳定而崩溃
- 
- @param waitMainThread 是否是阻塞主线程 因为需要所有显示的View 如果用线程操作view相关性会导致不稳定的错误 阻塞主线程相对安全一些 如果为 YES 不允许在主线程中调用此方法 NO 可以在主线程中调用
- @return view的信息
- */
-+ (NSArray *)currentAllViewInfoWaitMainThead:(BOOL)waitMainThread
+
++ (NSArray *)currentAllViewInfo
 {
-    if ([NSThread isMainThread] && waitMainThread) {
-        NSException * ex = [NSException exceptionWithName:@"DyViewManagerDomain" reason:@"if waitMainThread is true, you can't call this method on main thread" userInfo:nil];
-        [ex raise];
-        return nil;
-    }
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         lock = dispatch_semaphore_create(1);
-        mainLock = dispatch_semaphore_create(1);
     });
     
-    if (waitMainThread) {
+    NSMutableArray * tempArray = [NSMutableArray array];
+    
+    if ([NSThread isMainThread])
+    {
         dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
-        dispatch_semaphore_wait(mainLock,DISPATCH_TIME_FOREVER);
         
+        NSArray * windows = [[UIApplication sharedApplication]windows];
+        for (int i = 0; i < windows.count; i ++) {
+            UIWindow * window = windows[i];
+            NSDictionary * tempDic = [self infoDicByView:window];
+            if (tempDic) {
+                [tempArray addObject:tempDic];
+            }
+        }
+        dispatch_semaphore_signal(lock);
+    }
+    else
+    {
+        dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
         dispatch_async(dispatch_get_main_queue(), ^{
+            dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
             dispatch_semaphore_signal(lock);
-            dispatch_semaphore_wait(mainLock, DISPATCH_TIME_FOREVER);
-            dispatch_semaphore_signal(mainLock);
         });
+        
+        NSArray * windows = [[UIApplication sharedApplication]windows];
+        for (int i = 0; i < windows.count; i ++) {
+            UIWindow * window = windows[i];
+            NSDictionary * tempDic = [self infoDicByView:window];
+            if (tempDic) {
+                [tempArray addObject:tempDic];
+            }
+        }
+        
+        dispatch_semaphore_signal(lock);
     }
     
-    dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
-    NSMutableArray * tempArray = [NSMutableArray array];
-    NSArray * windows = [[UIApplication sharedApplication]windows];
-    for (int i = 0; i < windows.count; i ++) {
-        UIWindow * window = windows[i];
-        NSDictionary * tempDic = [self infoDicByView:window];
-        if (tempDic) {
-            [tempArray addObject:tempDic];
-        }
-    }
-    dispatch_semaphore_signal(lock);
-    if (waitMainThread) {
-        dispatch_semaphore_signal(mainLock);
-    }
     return tempArray;
 }
 
